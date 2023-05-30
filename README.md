@@ -5,7 +5,7 @@ Short description of Demo Font. Read more about this [project](https://github.co
 
 ## Specimen
 
-"![filename](filename.png)"
+"![SinarImage](./documentation/images/Sinar.png)"
 
 ## License
 
