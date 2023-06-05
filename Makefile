@@ -36,6 +36,12 @@ check-variable: $(VARDIR)
 check-fonts:
 	make check-ttf; make check-otf; make check-variable
 
+fix-fonts:
+	gftools gen-stat $(VARDIR)/*.ttf
+	for file in $(VARDIR)/*.ttf.fix; do \
+		mv $$file $${file%.fix}; \
+	done
+	
 build: dependencies
 	. venv/bin/activate
 	mkdir -p $(TTFDIR)
